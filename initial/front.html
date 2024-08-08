@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>front</title>
+    <script src="login.js"></script>
+    <link rel="stylesheet" href="login.css" />
+</head>
+<canvas id="Mycanvas" ><script src="test529.js"></script></canvas>
+<body>
+    <div id="before"></div>
+    <div id="main">
+    <form action="" id="form">
+        <h1 id="loginq">立即登录</h1><br>
+        <div id="box1"></div>
+        <label for="name1">账号</label><br><input type="text" name="username" id="name1" ><br><br>
+        <label for="code">密码</label><br><input type="password" name="psw" id="code" placeholder="密码长度至少为6位" onchange="codename"><br>
+        <br>
+        <!-- <div class="remember" style="text-align: center;">
+                <span><input style="width: auto;" type="checkbox" ></span> 
+                <span id="sp">记住账号</span>
+               <span><input style="width: auto;" type="checkbox" ></span>
+                <span>记住密码</span>
+                
+            </div> -->
+            <input type="checkbox" id="rememberme" name="rememberme"> <label for="rememberme">记住我</label>
+            <br>
+         <div style="text-align: center;">
+        <input type="button" id="L_login" value="登录" onclick="jump1()">
+        <input type="button" id="L_register" value="注册" onclick="jump2()">
+        </div><br><script src="remenberme.js"></script>
+        <div style="text-align: center;color: rgb(59, 194, 248) " onclick="showAlert()">忘记密码?</div >
+  </div>
+    </form>
+
+</body>
+
+
+</html>

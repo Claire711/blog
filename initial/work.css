@@ -1,0 +1,196 @@
+*{margin: 0;
+    padding: 0;}
+    body{
+      width: 100%;
+      height: 100vh;
+        background-image:url("./3.webp");
+        background-repeat: no-repeat;
+       
+    }
+    
+    #container{
+        display: grid;
+        grid-template-columns: repeat(12,1fr);
+        grid-template-rows: 3em auto 2em;
+        gap: 20px;
+        height: 100%;
+    
+    }
+    nav{
+        grid-column: 1/13;
+        grid-row: 1;
+        width:100%;
+        height:3em;
+        display: flex;
+        background-color: rgba(0, 0, 0, 0.993);
+        justify-content:space-between;
+        align-content: center;
+    margin-bottom: 1em;
+        box-shadow:0 2px 2px 2px rgb(8, 14, 37);
+    }
+    
+    a{
+        padding: 20px;
+        color:white;
+        text-decoration: none;
+        font-size: larger;
+    
+    }
+    
+    footer{
+        grid-column: 1/13;
+        grid-row: 3;
+        display: flex;
+        color: darkgray;
+        align-content: center;
+        font-size: 18px;
+        justify-content: center;
+    }
+    
+    
+    #left-content{ 
+        background-color: hwb(204 91% 5% / 0.815);
+        grid-column: 2/4;
+       height: 60%;
+    font-size: 20px;
+    align-items: center;
+    justify-content: center;
+       border-radius: 10px;
+    }
+  
+    #middle-content{grid-column: 4/10;
+        grid-row: 2;
+        background-color:  rgba(255, 255, 255,0.8);
+    
+    }
+    #right-content{
+        grid-column: 10/12;
+        grid-row: 2;
+        background-color:  rgba(255, 255, 255,0.8);
+    }
+   
+    #box1{
+        width: 100px;
+        height: 100px;
+        background-color: aqua;
+    display: block;
+    align-items: flex-start;
+    border-radius: 18px;
+    border-color: black;
+    border-style: solid;
+    justify-content: center;
+    align-content: center;
+    transition:width 2s,height 2s,background-color 2s,
+    rotate 2s,border-radius 2s;
+    
+    
+    
+    }
+    #box1:hover{
+        background-color: lightpink;
+        border-radius: 0px;
+    width: 200px;
+    height:200px;
+    rotate: 180deg;
+    justify-content: center;
+    align-content: center;
+    }
+    #box2{
+        position: relative;
+        background-color: aquamarine;
+        width: 100px;
+        height: 100px;
+        animation-name: ex;
+        animation-duration: 4s;
+        animation-iteration-count: infinite;
+    }
+    
+  
+.card{
+    background-color: rgba(255, 255, 255,0.8);
+    border-radius: 10px;
+    padding: 30px;
+ 
+}
+
+.card img{
+    width: 140px;
+    height: 140px;
+    border-radius: 70px;
+}
+ 
+
+.card h3{
+    text-align: center;
+    padding: 10px;
+}
+
+.card p{
+   
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    padding: 10px;
+    color: #aaa;
+}
+ 
+.card .counter{
+    display: flex;
+    padding: 5px;
+    justify-content: space-around;
+}
+
+
+.blog-content{
+    padding: 30px；
+ 
+}
+.blog-content  h1{
+    text-align: center;
+    padding: 10px;
+}
+.blog-content h3{
+    text-align: center;
+    padding: 10px;
+}
+.blog-content .date{
+    text-align: right;
+   color: #605d5d;
+ 
+}
+.blog-content p{
+    text-indent: 2em;
+}
+.blog-content .writer{
+    text-align: center;
+    color: #5874ed;
+
+}
+.blog-content .classify{
+    position:absolute;
+    bottom: 100px;
+    text-align: center;
+   color: #575757;
+ 
+}
+.blog-content .contentin{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+#right-content h1{
+    text-align: center;
+    padding: 10px;
+}
+#right-content button{
+    margin-bottom: 10px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 8px;
+    margin-top: 3px;
+    border-radius: 7px;
+    margin-left: 5px;
+}
+#right-content button:hover{
+background-color: #b9acac;
+}
